@@ -121,7 +121,7 @@ International &amp; National Research Network
       <div class="person-affil">University of Talca, Curicó, Chile<br><small>Department of Mining Engineering &amp; CRHIAM</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0002-5716-7755" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0002-5716-7755" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Uribe" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -133,7 +133,7 @@ International &amp; National Research Network
       <div class="person-affil">University of Concepción (UdeC), Chile<br><small>Department of Metallurgical Engineering &amp; CRHIAM</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0002-0065-2178" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0002-0065-2178" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Gutierrez" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -145,7 +145,7 @@ International &amp; National Research Network
       <div class="person-affil">University of Talca, Talca, Chile<br><small>Institute of Natural Resources Chemistry</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0003-1872-5133" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0003-1872-5133" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Amalraj" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -157,7 +157,7 @@ International &amp; National Research Network
       <div class="person-affil">Universidad Austral de Chile, Chile<br><small>Biopolymers &amp; Macromolecular Chemistry</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0002-4339-8536" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0002-4339-8536" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Giraldo" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -180,7 +180,7 @@ International &amp; National Research Network
       <div class="person-affil">University of Concepción (UdeC), Chile<br><small>Department of Metallurgical Engineering</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0002-9194-1951" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0002-9194-1951" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Vega-Garcia" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -195,7 +195,7 @@ International &amp; National Research Network
       <div class="person-affil">Universidad de Castilla-La Mancha (UCLM), Ciudad Real, Spain<br><small>Institute of Chemical and Environmental Technology (Centro ITQUIMA)</small></div>
     </div>
     <div class="person-links">
-      <a href="https://orcid.org/0000-0002-1464-5067" target="_blank" rel="noopener" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
+      <a href="https://orcid.org/0000-0002-1464-5067" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="ai ai-orcid"></i> ORCID</a>
       <a href="{{ base_path }}/publications/?q=Carmona" class="person-btn"><i class="fas fa-book-open"></i> Joint Papers</a>
     </div>
   </div>
@@ -210,7 +210,7 @@ International &amp; National Research Network
       <div class="person-affil">Université de Lorraine &amp; CNRS, Nancy, France<br><small>Adsorption Isotherms &amp; Molecular Dynamics Modeling</small></div>
     </div>
     <div class="person-links">
-      <a href="https://l2cm.univ-lorraine.fr/" target="_blank" rel="noopener" class="person-btn"><i class="fas fa-globe"></i> Laboratory</a>
+      <a href="https://l2cm.univ-lorraine.fr/" target="_blank" rel="noopener noreferrer" class="person-btn"><i class="fas fa-globe"></i> Laboratory</a>
     </div>
   </div>
 </div>

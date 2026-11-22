@@ -133,7 +133,7 @@ description: "Printable Curriculum Vitae of Romina Francisca Murga Moraga — Ph
                 URL: <a href="{{ post.paperurl }}" class="cv-pub-doi">{{ post.paperurl }}</a>.
                 {% endif %}
                 {% if post.pdfurl %}
-                <span class="no-print">[<a href="{{ base_path }}{{ post.pdfurl }}" target="_blank" rel="noopener" class="cv-pub-doi">PDF</a>]</span>
+                <span class="no-print">[<a href="{{ base_path }}{{ post.pdfurl }}" target="_blank" rel="noopener noreferrer" class="cv-pub-doi">PDF</a>]</span>
                 {% endif %}
             </li>
             {% endfor %}

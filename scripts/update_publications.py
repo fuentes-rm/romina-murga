@@ -1,3 +1,4 @@
+import html
 import os
 import re
 import unicodedata
@@ -35,6 +36,10 @@ def slugify(value):
 def clean_text(text):
     if not text:
         return ''
+    text = html.unescape(str(text))
+    # Strip any XML/JATS/HTML tags from external metadata (e.g. <jats:p>, <script>)
+    text = re.sub(r'<[^>]+>', ' ', text)
+    text = text.replace('<', '').replace('>', '')
     text = text.replace(r'\_\infty', '∞').replace(r'_\infty', '∞').replace('H\\_ınfty', 'H∞').replace('H_ınfty', 'H∞')
     text = text.replace('{', '').replace('}', '').replace('\\', '')
     text = text.replace('\n', ' ')
@@ -141,13 +146,17 @@ def load_bib_entries(bib_file_path):
 
 def normalize_doi_url(doi_raw, url_raw):
     doi = clean_text(doi_raw)
-    url = unquote(clean_text(url_raw))
+    url = unquote(clean_text(url_raw)).strip()
     if doi:
         doi = unquote(doi)
         doi = re.sub(r'^https?://(dx\.)?doi\.org/', '', doi, flags=re.IGNORECASE)
-        return f'https://doi.org/{doi}', doi
+        if re.match(r'^10\.\d{4,9}/\S+$', doi):
+            return f'https://doi.org/{doi}', doi
     if url:
-        url = re.sub(r'^http://(dx\.)?doi\.org/', 'https://doi.org/', url, flags=re.IGNORECASE)
+        url = re.sub(r'^http://', 'https://', url, flags=re.IGNORECASE)
+        url = re.sub(r'^https://dx\.doi\.org/', 'https://doi.org/', url, flags=re.IGNORECASE)
+        if not re.match(r'^https://[a-zA-Z0-9.-]+(?:/[^\s"\'<>]*)?$', url):
+            return '', ''
         doi_match = re.match(r'^https://doi\.org/(.+)$', url, flags=re.IGNORECASE)
         return url, (doi_match.group(1) if doi_match else '')
     return '', ''

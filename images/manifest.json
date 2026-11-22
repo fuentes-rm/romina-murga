@@ -1,15 +1,27 @@
+---
+layout: none
+permalink: /images/manifest.json
+sitemap: false
+---
 {
-	"name": "Romina F. Murga — Academic Portfolio",
+	"name": {{ site.title | jsonify }},
+	"short_name": {{ site.name | jsonify }},
+	"description": {{ site.description | jsonify }},
+	"start_url": "{{ site.baseurl | default: '/' }}",
+	"lang": {{ site.locale | default: "en" | jsonify }},
 	"icons": [
 		{
-			"src": "favicon-192x192.png",
+			"src": {{ "/images/favicon-192x192.png" | relative_url | jsonify }},
 			"sizes": "192x192",
 			"type": "image/png"
 		},
 		{
-			"src": "favicon-512x512.png",
+			"src": {{ "/images/favicon-512x512.png" | relative_url | jsonify }},
 			"sizes": "512x512",
 			"type": "image/png"
 		}
-	]
+	],
+	"theme_color": "#ffffff",
+	"background_color": "#ffffff",
+	"display": "standalone"
 }
